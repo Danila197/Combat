@@ -45,9 +45,7 @@ a {
 }
 .app {
 	background: linear-gradient(90deg, #010202 0%, #010202 50%, rgba(1, 2, 2, 0.2) 90.9%);
-	/* , url("../img/cover-image.jpg"); */
 	min-height: 100vh;
-	z-index: 10;
 }
 video {
 	position: absolute;
