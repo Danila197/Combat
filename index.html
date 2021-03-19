@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -41,14 +42,29 @@
 				сильнейший
 			</p>
 			<div class="button-group">
-				<button class="button button-primary">Предзаказ фильма</button>
-				<button class="button button-default">
+				<a data-fancybox data-src="#hidden-modal" href="#!" class="button button-primary">Предзаказ
+					фильма</a>
+				<a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button-default">
 					<img class="button-icon" src="img/play.svg" alt="иконка play">
 					<span class="button-text">Смотреть трейлер</span>
-				</button>
+				</a>
 			</div>
 		</section>
 	</div>
+	<div class="modal" style="display: none;" id="hidden-modal">
+		<h2 class="modal-title">Mortal Kombat</h2>
+		<p class="modal-text">2021
+			боевик, фентези, фантастика
+			США
+		</p>
+		<form method="POST" name="order" class="order">
+			<input type="text" placeholder="Имя" name="name">
+			<input type="text" placeholder="Почта" name="email">
+			<input type="submit" class="button button-form">
+		</form>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 
